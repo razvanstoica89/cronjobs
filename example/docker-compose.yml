@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    cronjobs:
+      restart: unless-stopped
+      image: razvanstoica/cronjobs:3
+      container_name: cronjobs
+      volumes:
+        - ./crontabs/root:/etc/crontabs/root
