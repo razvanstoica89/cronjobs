@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+LABEL maintainer="Razvan Stoica <github.com/razvanstoica89>"       version="latest"       description="A minimal Docker image based on Alpine Linux latest with curl"
+
+# Install curl
+RUN apk --no-cache add curl
+
+# Run crond ( -f is for Foreground)
+CMD ["/usr/sbin/crond", "-f"]
