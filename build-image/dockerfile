@@ -1,6 +1,6 @@
-FROM alpine:3.12
+FROM alpine:3.12.1
 
-LABEL maintainer="Razvan Stoica <github.com/razvanstoica89>"       version="3.12"       description="A minimal Docker image based on Alpine Linux 3.12 with curl"
+LABEL maintainer="Razvan Stoica <github.com/razvanstoica89>"       version="3.12.1"       description="A minimal Docker image based on Alpine Linux 3.12.1 with curl"
 
 # Install curl
 RUN apk --no-cache add curl
